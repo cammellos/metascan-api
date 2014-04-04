@@ -5,5 +5,5 @@ metascan-api
 
 OPSWAT Metascan and Metascan Online API
 
-http://www.opswat.com/products/metascan
-https://www.metascan-online.com
+- http://www.opswat.com/products/metascan
+- https://www.metascan-online.com
