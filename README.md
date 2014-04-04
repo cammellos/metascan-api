@@ -3,4 +3,7 @@
 metascan_api
 ============
 
-OPSWAT Metascan API
+OPSWAT Metascan and Metascan Online API
+
+http://www.opswat.com/products/metascan
+https://www.metascan-online.com
