@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: !!binary |
+      LS0yOTY5OGI3YTJkNWM0YTQwODM0OWIxNzI1MmZjNjA4OQ0KQ29udGVudC1EaXNwb3NpdGlvbjog
+      Zm9ybS1kYXRhOyBuYW1lPSJmaWxlIjsgZmlsZW5hbWU9ImZpeHR1cmVzL2NsZWFuX2ZpbGUudHh0
+      Ig0KDQoNCi0tMjk2OThiN2EyZDVjNGE0MDgzNDliMTcyNTJmYzYwODktLQ0K
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['159']
+      Content-Type: [multipart/form-data; boundary=29698b7a2d5c4a408349b17252fc6089]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: POST
+    uri: https://scan.metascan-online.com/v2/file?archivepwd=&filename=&samplesharing=1
+  response:
+    body: {string: '{ "data_id": "1d6d86bcfbbc4c49ac3009b4c2cf6366","rest_ip": "scan03.metascan-online.com:443/v2"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Connection: [keep-alive]
+      Content-Length: ['95']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:01:55 GMT']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan.metascan-online.com/v2/hash/1d6d86bcfbbc4c49ac3009b4c2cf6366
+  response:
+    body: {string: '{ "1d6d86bcfbbc4c49ac3009b4c2cf6366": "Not Found" }'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Connection: [keep-alive]
+      Content-Length: ['51']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:01:56 GMT']
+      ETag: ['"6824557767016fd5d2adb9d5609a6c52bb07b5e9"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+version: 1

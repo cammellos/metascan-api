@@ -1,0 +1,29 @@
+interactions:
+- request:
+    body: !!binary |
+      LS01ZWE2NjU5NmY4OTA0M2ZmOWQ1NmY2NmYxZDFmNjFlMw0KQ29udGVudC1EaXNwb3NpdGlvbjog
+      Zm9ybS1kYXRhOyBuYW1lPSJmaWxlIjsgZmlsZW5hbWU9ImZpeHR1cmVzL2NsZWFuX2ZpbGUudHh0
+      Ig0KDQoNCi0tNWVhNjY1OTZmODkwNDNmZjlkNTZmNjZmMWQxZjYxZTMtLQ0K
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['159']
+      Content-Type: [multipart/form-data; boundary=5ea66596f89043ff9d56f66f1d1f61e3]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: POST
+    uri: https://scan.metascan-online.com/v2/file?archivepwd=&filename=&samplesharing=1
+  response:
+    body: {string: '{ "data_id": "38849e31d2c941faa9eefaa49f509b2f","rest_ip": "scan04.metascan-online.com:443/v2"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Connection: [keep-alive]
+      Content-Length: ['95']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:02:04 GMT']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+version: 1

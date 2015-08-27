@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: !!binary |
+      LS01N2ExZjMwOWY4ODA0ZWJmYmViMzI1Y2QwYTk2MDNlZg0KQ29udGVudC1EaXNwb3NpdGlvbjog
+      Zm9ybS1kYXRhOyBuYW1lPSJmaWxlIjsgZmlsZW5hbWU9ImZpeHR1cmVzL2NsZWFuX2ZpbGUudHh0
+      Ig0KDQoNCi0tNTdhMWYzMDlmODgwNGViZmJlYjMyNWNkMGE5NjAzZWYtLQ0K
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['159']
+      Content-Type: [multipart/form-data; boundary=57a1f309f8804ebfbeb325cd0a9603ef]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: POST
+    uri: https://scan.metascan-online.com/v2/file?archivepwd=&filename=&samplesharing=1
+  response:
+    body: {string: '{ "data_id": "c321542e9f1b4812bcc6a89a23f1460a","rest_ip": "scan04.metascan-online.com:443/v2"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Connection: [keep-alive]
+      Content-Length: ['95']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:01:53 GMT']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan04.metascan-online.com/v2/file/c321542e9f1b4812bcc6a89a23f1460a
+  response:
+    body: {string: '{"file_id":null,"top_threat":-1,"scan_results":{"scan_details":{"Agnitum":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":1.0},"Ahnlab":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"AVG":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"Avira":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"BitDefender":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"ClamAV":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":47.0},"CYREN":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"DrWebGateway":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":31.0},"Emsisoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"ESET":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"Fortinet":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":94.0},"F-prot":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"Hauri":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0},"Ikarus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0},"K7":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"Kaspersky":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0},"McAfee-Gateway":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":265.0},"NANO":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"nProtect":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"Preventon":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":78.0},"QuickHeal":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0},"Sophos":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":16.0},"Symantec":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":78.0},"ThreatTrack":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":31.0},"VirIT":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0},"VirusBlokAda":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":16.0},"Zillya!":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1.0},"Zoner":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0}},"rescan_available":false,"data_id":"c321542e9f1b4812bcc6a89a23f1460a","scan_all_result_i":-1,"start_time":"2015-08-28T17:01:53.7929203Z","total_time":0.0,"total_avs":43,"progress_percentage":65,"in_queue":0,"scan_all_result_a":""},"file_info":{"file_size":159,"upload_timestamp":"2015-08-28T17:01:53.6993225Z","md5":"F1FB529A5A5397A83DF3889BFA89A105","sha1":"0EAA6B56E694597D53FA92D1FBD7B99D76A6FE4C","sha256":"8F86C844C7F1797245254F519696CD2EC89FA32BC25C9A994BED6194DF98C8CE","file_type_category":"T","file_type_description":"ASCII
+        text, with CRLF line terminators","file_type_extension":"-","display_name":"File
+        name unknown"},"data_id":"c321542e9f1b4812bcc6a89a23f1460a"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Content-Length: ['3476']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:01:54 GMT']
+      ETag: ['"28f1fd97b933253efac57043968ab4801c4408fd"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+version: 1

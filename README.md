@@ -3,6 +3,17 @@
 metascan-api
 ============
 
+# Tests
+
+To run the tests:
+
+```nosetests```
+
+The library uses vcrpy, to refresh the fixtures delete `fixtures/vcr-cassettes` and re-run the tests.
+
+
+# References
+
 OPSWAT Metascan and Metascan Online API
 
 - http://www.opswat.com/products/metascan

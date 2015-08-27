@@ -3,6 +3,8 @@ import requests
 
 __author__ = 'Josh Maine'
 
+class MetaScanOnlineAPIError(Exception):
+    pass
 
 class MetaScanOnline():
     """ Metascan Online Public API v 2.0
@@ -13,9 +15,12 @@ class MetaScanOnline():
         https://www.metascan-online.com/en/public-api
     """
 
-    def __init__(self, apikey):
-        self.base = 'https://api.metascan-online.com/v1/'
+    def __init__(self, apikey, poll_interval=3):
+        self.host = "https://scan.metascan-online.com"
+        self.api_version = "v2"
+        self.base = self.host + "/" + self.api_version + "/"
         self.apikey = apikey
+        self.poll_interval = poll_interval
 
     def scan_file(self, this_file, filename='', archivepwd='', samplesharing=1):
         """
@@ -29,15 +34,14 @@ class MetaScanOnline():
         @param samplesharing: This flag is only available to users that have purchased access to private scanning
                                 through the Metascan Online API. If '0', scanned files will not be stored or shared
                                 by Metascan Online, although hashed results will remain available.	[OPTIONAL]
-        @return: data_id	Data ID used for retrieving scan results.
-                            Since there are potentially multiple scans for same files when any engine has different
-                            definition time or when there is an additional engine, this is identifier for per scan
-                            other than per file. (JSON)
+        @return: data_id rest_ip	Data ID used for retrieving scan results rest_ip is the server to query (JSON)
+        @raise MetaScanOnlineAPIError: Any HTTP error returned by MetaScan
         """
         url = self.base + 'file'
-        params = dict(apikey=self.apikey, filename=filename, archivepwd=archivepwd, samplesharing=samplesharing)
+        params = {'filename': filename, 'archivepwd': archivepwd, 'samplesharing': samplesharing}
+        headers = {'apikey': self.apikey}
         files = {'file': (this_file, open(this_file, 'rb'))}
-        return requests.post(url=url, files=files, params=params)
+        return self.__call_api__('post',{'url': url, 'files': files, 'params':params})
 
     def get_scan_result_from_hash(self, this_hash):
         """
@@ -47,10 +51,10 @@ class MetaScanOnline():
         @return: scan results (JSON)
         """
         url = self.base + 'hash/' + this_hash
-        params = dict(apikey=self.apikey)
-        return requests.get(url=url, params=params)
+        return self.__call_api__('get', {'url': url})
 
-    def get_scan_result_from_data_id(self, data_id):
+
+    def get_scan_result_from_data_id(self, data_id, rest_ip):
         """
         Retrieve scan results
 
@@ -60,22 +64,33 @@ class MetaScanOnline():
         Scan completion can be traced using scan_results.progress_percentage value from the response.
 
         @param data_id: Get from (Scanning a file)	[REQUIRED]
-        @return: sca results (JSON)n
+        @param rest_ip: The url to poll                 [REQUIRED]
+        @return: scan results (JSON)
+        @raise MetaScanOnlineAPIError: Any HTTP error returned by MetaScan
         """
-        url = self.base + 'file/' + data_id
-        params = dict(apikey=self.apikey)
-        return requests.get(url=url, params=params)
+
+        url = "https://" + rest_ip + '/file/' + data_id
+        return  self.__call_api__('get', {'url': url})
 
     def scan_file_and_get_results(self, this_file):
-        response = self.scan_file(this_file, self.apikey)
-        data_id = response.json()['data_id']
+        response = self.scan_file(this_file)
+        data_id = response['data_id']
+        rest_ip = response['rest_ip']
         while True:
-            response = self.get_scan_result_from_data_id(data_id=data_id)
-            if response.status_code != requests.codes.ok:
-                return response
-            if response.json()['scan_results']['progress_percentage'] == 100:
+            response = self.get_scan_result_from_data_id(data_id=data_id, rest_ip=rest_ip)
+            if response['scan_results']['progress_percentage'] == 100:
                 break
             else:
-                time.sleep(3)
-
+                time.sleep(self.poll_interval)
         return response
+
+    def __call_api__(self, method, params):
+        http_parameters = {'headers': {'apikey': self.apikey}}
+        http_parameters.update(params)
+
+        request = getattr(requests,method)(**http_parameters)
+
+        if request.status_code != requests.codes.ok:
+            raise MetaScanOnlineAPIError("Request failed with status code: " + str(request.status_code))
+        return request.json()
+

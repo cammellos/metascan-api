@@ -8,7 +8,7 @@ setup(
     name='metascan_api',
     test_suite="tests",
     version='1',
-    packages=['metascan', 'metascan.test'],
+    packages=['metascan', 'metascan.tests'],
     url='https://github.com/blacktop/metascan-api',
     license='GPLv3',
     author='blacktop',

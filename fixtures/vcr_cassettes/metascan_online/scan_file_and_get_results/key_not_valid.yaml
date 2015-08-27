@@ -1,0 +1,41 @@
+interactions:
+- request:
+    body: !!binary |
+      LS03Y2EwMDdlMDMyMjk0NWE4ODlhYTQ3OTcyZDMzZTkxOA0KQ29udGVudC1EaXNwb3NpdGlvbjog
+      Zm9ybS1kYXRhOyBuYW1lPSJmaWxlIjsgZmlsZW5hbWU9ImZpeHR1cmVzL2NsZWFuX2ZpbGUudHh0
+      Ig0KDQoNCi0tN2NhMDA3ZTAzMjI5NDVhODg5YWE0Nzk3MmQzM2U5MTgtLQ0K
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['159']
+      Content-Type: [multipart/form-data; boundary=7ca007e0322945a889aa47972d33e918]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+      apikey: [notvalidkey]
+    method: POST
+    uri: https://scan.metascan-online.com/v2/file?archivepwd=&filename=&samplesharing=1
+  response:
+    body: {string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<title>401 - Unauthorized:
+        Access is denied due to invalid credentials.</title>\r\n<style type=\"text/css\">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana,
+        Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px
+        10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-size:1.7em;margin:0;color:#CC0000;}
+        \r\nh3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} \r\n#header{width:96%;margin:0
+        0 0 0;padding:6px 2% 6px 2%;font-family:\"trebuchet MS\", Verdana, sans-serif;color:#FFF;\r\nbackground-color:#555555;}\r\n#content{margin:0
+        0 0 2%;position:relative;}\r\n.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}\r\n-->\r\n</style>\r\n</head>\r\n<body>\r\n<div
+        id=\"header\"><h1>Server Error</h1></div>\r\n<div id=\"content\">\r\n <div
+        class=\"content-container\"><fieldset>\r\n  <h2>401 - Unauthorized: Access
+        is denied due to invalid credentials.</h2>\r\n  <h3>You do not have permission
+        to view this directory or page using the credentials that you supplied.</h3>\r\n
+        </fieldset></div>\r\n</div>\r\n</body>\r\n</html>\r\n"}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Connection: [keep-alive]
+      Content-Type: [text/html]
+      Date: ['Fri, 28 Aug 2015 17:02:04 GMT']
+      Server: [Metascan]
+    status: {code: 401, message: Invalid API key}
+version: 1

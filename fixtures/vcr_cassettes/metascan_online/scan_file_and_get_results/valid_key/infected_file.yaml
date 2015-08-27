@@ -1,0 +1,245 @@
+interactions:
+- request:
+    body: !!binary |
+      LS1hMjk2ZjBmY2U0Yjg0MzA0ODVkYTM4NWU2ZWQwMTA1MQ0KQ29udGVudC1EaXNwb3NpdGlvbjog
+      Zm9ybS1kYXRhOyBuYW1lPSJmaWxlIjsgZmlsZW5hbWU9ImZpeHR1cmVzL2luZmVjdGVkX2ZpbGUu
+      dHh0Ig0KDQpYNU8hUCVAQVBbNFxQWlg1NChQXik3Q0MpN30kRUlDQVItU1RBTkRBUkQtQU5USVZJ
+      UlVTLVRFU1QtRklMRSEkSCtIKgoNCi0tYTI5NmYwZmNlNGI4NDMwNDg1ZGEzODVlNmVkMDEwNTEt
+      LQ0K
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['231']
+      Content-Type: [multipart/form-data; boundary=a296f0fce4b8430485da385e6ed01051]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: POST
+    uri: https://scan.metascan-online.com/v2/file?archivepwd=&filename=&samplesharing=1
+  response:
+    body: {string: '{ "data_id": "fc5e448c85e2444692fd102cc502caf4","rest_ip": "scan03.metascan-online.com:443/v2"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Connection: [keep-alive]
+      Content-Length: ['95']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:01:59 GMT']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan03.metascan-online.com/v2/file/fc5e448c85e2444692fd102cc502caf4
+  response:
+    body: {string: '{"file_id":null,"top_threat":-1,"scan_results":{"scan_details":{"Agnitum":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":125.0},"Ahnlab":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"AVG":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"Avira":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"BitDefender":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"CYREN":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"DrWebGateway":{"scan_result_i":1,"threat_found":"EICAR
+        Test File (NOT a Virus!)","def_time":"2015-08-28T00:00:00","scan_time":47.0},"Emsisoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"ESET":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":172.0},"Fortinet":{"scan_result_i":1,"threat_found":"EICAR_TEST_FILE","def_time":"2015-08-28T00:00:00","scan_time":219.0},"F-prot":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"Hauri":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Ikarus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":32.0},"K7":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Kaspersky":{"scan_result_i":1,"threat_found":"EICAR-Test-File","def_time":"2015-08-28T00:00:00","scan_time":172.0},"NANO":{"scan_result_i":1,"threat_found":"Marker.Dos.EICAR-Test-File.dyb","def_time":"2015-08-28T00:00:00","scan_time":156.0},"nProtect":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Preventon":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-27T00:00:00","scan_time":125.0},"QuickHeal":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Sophos":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":250.0},"ThreatTrack":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":234.0},"VirIT":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":31.0},"VirusBlokAda":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":16.0},"Zillya!":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":94.0},"Zoner":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0}},"rescan_available":false,"data_id":"fc5e448c85e2444692fd102cc502caf4","scan_all_result_i":-1,"start_time":"2015-08-28T17:01:59.2077927Z","total_time":0.0,"total_avs":43,"progress_percentage":58,"in_queue":0,"scan_all_result_a":""},"file_info":{"file_size":231,"upload_timestamp":"2015-08-28T17:01:59.1141923Z","md5":"A624ECCFDFCA8884D4C3D174005F2602","sha1":"C76F98BB191565A3EE4B76DF1F5F7234799AD20A","sha256":"2D3734DABF2D74382228B68DA0F0C2FCED449451347D7EBC3DFAA14A2514CCD0","file_type_category":"T","file_type_description":"ASCII
+        text, with CRLF, LF line terminators","file_type_extension":"-","display_name":"File
+        name unknown"},"data_id":"fc5e448c85e2444692fd102cc502caf4"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Content-Length: ['3313']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:01:59 GMT']
+      ETag: ['"4810ae7ae8d954c4c266ca60149ad18e1915313e"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan03.metascan-online.com/v2/file/fc5e448c85e2444692fd102cc502caf4
+  response:
+    body: {string: '{"file_id":null,"top_threat":-1,"scan_results":{"scan_details":{"AegisLab":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-28T00:00:00","scan_time":1248.0},"Agnitum":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":125.0},"Ahnlab":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Antiy":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":749.0},"AVG":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"Avira":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"BitDefender":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"ByteHero":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":671.0},"ClamAV":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":968.0},"CYREN":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"DrWebGateway":{"scan_result_i":1,"threat_found":"EICAR
+        Test File (NOT a Virus!)","def_time":"2015-08-28T00:00:00","scan_time":47.0},"Emsisoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"ESET":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":172.0},"Filseclab":{"scan_result_i":1,"threat_found":"EICAR
+        Test String","def_time":"2015-08-28T00:00:00","scan_time":453.0},"Fortinet":{"scan_result_i":1,"threat_found":"EICAR_TEST_FILE","def_time":"2015-08-28T00:00:00","scan_time":219.0},"F-prot":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"F-secure":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1124.0},"Hauri":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Ikarus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":32.0},"K7":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Kaspersky":{"scan_result_i":1,"threat_found":"EICAR-Test-File","def_time":"2015-08-28T00:00:00","scan_time":172.0},"McAfee-Gateway":{"scan_result_i":1,"threat_found":"EICAR
+        test file","def_time":"2015-08-28T00:00:00","scan_time":437.0},"Microsoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":671.0},"NANO":{"scan_result_i":1,"threat_found":"Marker.Dos.EICAR-Test-File.dyb","def_time":"2015-08-28T00:00:00","scan_time":156.0},"nProtect":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Preventon":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-27T00:00:00","scan_time":125.0},"QuickHeal":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Sophos":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":250.0},"Symantec":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":453.0},"ThreatTrack":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":234.0},"TrendMicro":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1342.0},"VirIT":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":31.0},"VirusBlokAda":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":16.0},"Xvirus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-15T00:00:00","scan_time":1123.0},"Zillya!":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":94.0},"Zoner":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0}},"rescan_available":false,"data_id":"fc5e448c85e2444692fd102cc502caf4","scan_all_result_i":-1,"start_time":"2015-08-28T17:01:59.2077927Z","total_time":0.0,"total_avs":43,"progress_percentage":83,"in_queue":0,"scan_all_result_a":""},"file_info":{"file_size":231,"upload_timestamp":"2015-08-28T17:01:59.1141923Z","md5":"A624ECCFDFCA8884D4C3D174005F2602","sha1":"C76F98BB191565A3EE4B76DF1F5F7234799AD20A","sha256":"2D3734DABF2D74382228B68DA0F0C2FCED449451347D7EBC3DFAA14A2514CCD0","file_type_category":"T","file_type_description":"ASCII
+        text, with CRLF, LF line terminators","file_type_extension":"-","display_name":"File
+        name unknown"},"data_id":"fc5e448c85e2444692fd102cc502caf4"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Content-Length: ['4465']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:02:00 GMT']
+      ETag: ['"b953864c84433dd2880714b96b3a41a543453ee9"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan03.metascan-online.com/v2/file/fc5e448c85e2444692fd102cc502caf4
+  response:
+    body: {string: '{"file_id":null,"top_threat":-1,"scan_results":{"scan_details":{"AegisLab":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-28T00:00:00","scan_time":1248.0},"Agnitum":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":125.0},"Ahnlab":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Antiy":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":749.0},"AVG":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"Avira":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"BitDefender":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"ByteHero":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":671.0},"ClamAV":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":968.0},"CYREN":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"DrWebGateway":{"scan_result_i":1,"threat_found":"EICAR
+        Test File (NOT a Virus!)","def_time":"2015-08-28T00:00:00","scan_time":47.0},"Emsisoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"ESET":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":172.0},"Filseclab":{"scan_result_i":1,"threat_found":"EICAR
+        Test String","def_time":"2015-08-28T00:00:00","scan_time":453.0},"Fortinet":{"scan_result_i":1,"threat_found":"EICAR_TEST_FILE","def_time":"2015-08-28T00:00:00","scan_time":219.0},"F-prot":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"F-secure":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1124.0},"Hauri":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Ikarus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":32.0},"K7":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Kaspersky":{"scan_result_i":1,"threat_found":"EICAR-Test-File","def_time":"2015-08-28T00:00:00","scan_time":172.0},"McAfee-Gateway":{"scan_result_i":1,"threat_found":"EICAR
+        test file","def_time":"2015-08-28T00:00:00","scan_time":437.0},"Microsoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":671.0},"NANO":{"scan_result_i":1,"threat_found":"Marker.Dos.EICAR-Test-File.dyb","def_time":"2015-08-28T00:00:00","scan_time":156.0},"nProtect":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Preventon":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-27T00:00:00","scan_time":125.0},"QuickHeal":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Sophos":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":250.0},"Symantec":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":453.0},"ThreatTrack":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":234.0},"TrendMicro":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1342.0},"VirIT":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":31.0},"VirusBlokAda":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":16.0},"Xvirus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-15T00:00:00","scan_time":1123.0},"Zillya!":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":94.0},"Zoner":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0}},"rescan_available":false,"data_id":"fc5e448c85e2444692fd102cc502caf4","scan_all_result_i":-1,"start_time":"2015-08-28T17:01:59.2077927Z","total_time":0.0,"total_avs":43,"progress_percentage":83,"in_queue":0,"scan_all_result_a":""},"file_info":{"file_size":231,"upload_timestamp":"2015-08-28T17:01:59.1141923Z","md5":"A624ECCFDFCA8884D4C3D174005F2602","sha1":"C76F98BB191565A3EE4B76DF1F5F7234799AD20A","sha256":"2D3734DABF2D74382228B68DA0F0C2FCED449451347D7EBC3DFAA14A2514CCD0","file_type_category":"T","file_type_description":"ASCII
+        text, with CRLF, LF line terminators","file_type_extension":"-","display_name":"File
+        name unknown"},"data_id":"fc5e448c85e2444692fd102cc502caf4"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Content-Length: ['4465']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:02:00 GMT']
+      ETag: ['"b953864c84433dd2880714b96b3a41a543453ee9"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan03.metascan-online.com/v2/file/fc5e448c85e2444692fd102cc502caf4
+  response:
+    body: {string: '{"file_id":null,"top_threat":-1,"scan_results":{"scan_details":{"AegisLab":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-28T00:00:00","scan_time":1248.0},"Agnitum":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":125.0},"Ahnlab":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Antiy":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":749.0},"AVG":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"Avira":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"BitDefender":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"ByteHero":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":671.0},"ClamAV":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":968.0},"CYREN":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"DrWebGateway":{"scan_result_i":1,"threat_found":"EICAR
+        Test File (NOT a Virus!)","def_time":"2015-08-28T00:00:00","scan_time":47.0},"Emsisoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"ESET":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":172.0},"Filseclab":{"scan_result_i":1,"threat_found":"EICAR
+        Test String","def_time":"2015-08-28T00:00:00","scan_time":453.0},"Fortinet":{"scan_result_i":1,"threat_found":"EICAR_TEST_FILE","def_time":"2015-08-28T00:00:00","scan_time":219.0},"F-prot":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"F-secure":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1124.0},"Hauri":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Ikarus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":32.0},"K7":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Kaspersky":{"scan_result_i":1,"threat_found":"EICAR-Test-File","def_time":"2015-08-28T00:00:00","scan_time":172.0},"McAfee-Gateway":{"scan_result_i":1,"threat_found":"EICAR
+        test file","def_time":"2015-08-28T00:00:00","scan_time":437.0},"Microsoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":671.0},"NANO":{"scan_result_i":1,"threat_found":"Marker.Dos.EICAR-Test-File.dyb","def_time":"2015-08-28T00:00:00","scan_time":156.0},"nProtect":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Preventon":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-27T00:00:00","scan_time":125.0},"QuickHeal":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Sophos":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":250.0},"Symantec":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":453.0},"ThreatTrack":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":234.0},"TrendMicro":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1342.0},"VirIT":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":31.0},"VirusBlokAda":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":16.0},"Xvirus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-15T00:00:00","scan_time":1123.0},"Zillya!":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":94.0},"Zoner":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0}},"rescan_available":false,"data_id":"fc5e448c85e2444692fd102cc502caf4","scan_all_result_i":-1,"start_time":"2015-08-28T17:01:59.2077927Z","total_time":0.0,"total_avs":43,"progress_percentage":83,"in_queue":0,"scan_all_result_a":""},"file_info":{"file_size":231,"upload_timestamp":"2015-08-28T17:01:59.1141923Z","md5":"A624ECCFDFCA8884D4C3D174005F2602","sha1":"C76F98BB191565A3EE4B76DF1F5F7234799AD20A","sha256":"2D3734DABF2D74382228B68DA0F0C2FCED449451347D7EBC3DFAA14A2514CCD0","file_type_category":"T","file_type_description":"ASCII
+        text, with CRLF, LF line terminators","file_type_extension":"-","display_name":"File
+        name unknown"},"data_id":"fc5e448c85e2444692fd102cc502caf4"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Content-Length: ['4465']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:02:01 GMT']
+      ETag: ['"b953864c84433dd2880714b96b3a41a543453ee9"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan03.metascan-online.com/v2/file/fc5e448c85e2444692fd102cc502caf4
+  response:
+    body: {string: '{"file_id":null,"top_threat":-1,"scan_results":{"scan_details":{"AegisLab":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-28T00:00:00","scan_time":1248.0},"Agnitum":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":125.0},"Ahnlab":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Antiy":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":749.0},"AVG":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"Avira":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Baidu":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1514.0},"BitDefender":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"ByteHero":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":671.0},"ClamAV":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":968.0},"CYREN":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"DrWebGateway":{"scan_result_i":1,"threat_found":"EICAR
+        Test File (NOT a Virus!)","def_time":"2015-08-28T00:00:00","scan_time":47.0},"Emsisoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"ESET":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":172.0},"Filseclab":{"scan_result_i":1,"threat_found":"EICAR
+        Test String","def_time":"2015-08-28T00:00:00","scan_time":453.0},"Fortinet":{"scan_result_i":1,"threat_found":"EICAR_TEST_FILE","def_time":"2015-08-28T00:00:00","scan_time":219.0},"F-prot":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"F-secure":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1124.0},"Hauri":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Ikarus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":32.0},"Jiangmin":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1514.0},"K7":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Kaspersky":{"scan_result_i":1,"threat_found":"EICAR-Test-File","def_time":"2015-08-28T00:00:00","scan_time":172.0},"McAfee-Gateway":{"scan_result_i":1,"threat_found":"EICAR
+        test file","def_time":"2015-08-28T00:00:00","scan_time":437.0},"Microsoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":671.0},"NANO":{"scan_result_i":1,"threat_found":"Marker.Dos.EICAR-Test-File.dyb","def_time":"2015-08-28T00:00:00","scan_time":156.0},"nProtect":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Preventon":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-27T00:00:00","scan_time":125.0},"QuickHeal":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Sophos":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":250.0},"SUPERAntiSpyware":{"scan_result_i":1,"threat_found":"NotAThreat.EICAR[TestFile]","def_time":"2015-08-25T00:00:00","scan_time":1576.0},"Symantec":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":453.0},"ThreatTrack":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":234.0},"TrendMicro":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1342.0},"TrendMicroHouseCall":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":1404.0},"VirIT":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":31.0},"VirusBlokAda":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":16.0},"Xvirus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-15T00:00:00","scan_time":1123.0},"Zillya!":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":94.0},"Zoner":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0}},"rescan_available":false,"data_id":"fc5e448c85e2444692fd102cc502caf4","scan_all_result_i":-1,"start_time":"2015-08-28T17:01:59.2077927Z","total_time":0.0,"total_avs":43,"progress_percentage":93,"in_queue":0,"scan_all_result_a":""},"file_info":{"file_size":231,"upload_timestamp":"2015-08-28T17:01:59.1141923Z","md5":"A624ECCFDFCA8884D4C3D174005F2602","sha1":"C76F98BB191565A3EE4B76DF1F5F7234799AD20A","sha256":"2D3734DABF2D74382228B68DA0F0C2FCED449451347D7EBC3DFAA14A2514CCD0","file_type_category":"T","file_type_description":"ASCII
+        text, with CRLF, LF line terminators","file_type_extension":"-","display_name":"File
+        name unknown"},"data_id":"fc5e448c85e2444692fd102cc502caf4"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Content-Length: ['4911']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:02:01 GMT']
+      ETag: ['"0a4590d5d0d30e4b80e92040044b836e20bae42f"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan03.metascan-online.com/v2/file/fc5e448c85e2444692fd102cc502caf4
+  response:
+    body: {string: '{"file_id":null,"top_threat":-1,"scan_results":{"scan_details":{"AegisLab":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-28T00:00:00","scan_time":1248.0},"Agnitum":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":125.0},"Ahnlab":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Antiy":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":749.0},"AVG":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"Avira":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Baidu":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1514.0},"BitDefender":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"ByteHero":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":671.0},"ClamAV":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":968.0},"CYREN":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"DrWebGateway":{"scan_result_i":1,"threat_found":"EICAR
+        Test File (NOT a Virus!)","def_time":"2015-08-28T00:00:00","scan_time":47.0},"Emsisoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"ESET":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":172.0},"Filseclab":{"scan_result_i":1,"threat_found":"EICAR
+        Test String","def_time":"2015-08-28T00:00:00","scan_time":453.0},"Fortinet":{"scan_result_i":1,"threat_found":"EICAR_TEST_FILE","def_time":"2015-08-28T00:00:00","scan_time":219.0},"F-prot":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"F-secure":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1124.0},"Hauri":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Ikarus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":32.0},"Jiangmin":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1514.0},"K7":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Kaspersky":{"scan_result_i":1,"threat_found":"EICAR-Test-File","def_time":"2015-08-28T00:00:00","scan_time":172.0},"McAfee-Gateway":{"scan_result_i":1,"threat_found":"EICAR
+        test file","def_time":"2015-08-28T00:00:00","scan_time":437.0},"Microsoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":671.0},"NANO":{"scan_result_i":1,"threat_found":"Marker.Dos.EICAR-Test-File.dyb","def_time":"2015-08-28T00:00:00","scan_time":156.0},"nProtect":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Preventon":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-27T00:00:00","scan_time":125.0},"QuickHeal":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Sophos":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":250.0},"SUPERAntiSpyware":{"scan_result_i":1,"threat_found":"NotAThreat.EICAR[TestFile]","def_time":"2015-08-25T00:00:00","scan_time":1576.0},"Symantec":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":453.0},"ThreatTrack":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":234.0},"TrendMicro":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1342.0},"TrendMicroHouseCall":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":1404.0},"VirIT":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":31.0},"VirusBlokAda":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":16.0},"Xvirus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-15T00:00:00","scan_time":1123.0},"Zillya!":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":94.0},"Zoner":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0}},"rescan_available":false,"data_id":"fc5e448c85e2444692fd102cc502caf4","scan_all_result_i":-1,"start_time":"2015-08-28T17:01:59.2077927Z","total_time":0.0,"total_avs":43,"progress_percentage":93,"in_queue":0,"scan_all_result_a":""},"file_info":{"file_size":231,"upload_timestamp":"2015-08-28T17:01:59.1141923Z","md5":"A624ECCFDFCA8884D4C3D174005F2602","sha1":"C76F98BB191565A3EE4B76DF1F5F7234799AD20A","sha256":"2D3734DABF2D74382228B68DA0F0C2FCED449451347D7EBC3DFAA14A2514CCD0","file_type_category":"T","file_type_description":"ASCII
+        text, with CRLF, LF line terminators","file_type_extension":"-","display_name":"File
+        name unknown"},"data_id":"fc5e448c85e2444692fd102cc502caf4"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Content-Length: ['4911']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:02:01 GMT']
+      ETag: ['"0a4590d5d0d30e4b80e92040044b836e20bae42f"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan03.metascan-online.com/v2/file/fc5e448c85e2444692fd102cc502caf4
+  response:
+    body: {string: '{"file_id":null,"top_threat":-1,"scan_results":{"scan_details":{"AegisLab":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-28T00:00:00","scan_time":1248.0},"Agnitum":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":125.0},"Ahnlab":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Antiy":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":749.0},"AVG":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"Avira":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Baidu":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1514.0},"BitDefender":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"ByteHero":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":671.0},"ClamAV":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":968.0},"CYREN":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"DrWebGateway":{"scan_result_i":1,"threat_found":"EICAR
+        Test File (NOT a Virus!)","def_time":"2015-08-28T00:00:00","scan_time":47.0},"Emsisoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":250.0},"ESET":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":172.0},"Filseclab":{"scan_result_i":1,"threat_found":"EICAR
+        Test String","def_time":"2015-08-28T00:00:00","scan_time":453.0},"Fortinet":{"scan_result_i":1,"threat_found":"EICAR_TEST_FILE","def_time":"2015-08-28T00:00:00","scan_time":219.0},"F-prot":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":156.0},"F-secure":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1124.0},"Hauri":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Ikarus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":32.0},"Jiangmin":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1514.0},"K7":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Kaspersky":{"scan_result_i":1,"threat_found":"EICAR-Test-File","def_time":"2015-08-28T00:00:00","scan_time":172.0},"McAfee-Gateway":{"scan_result_i":1,"threat_found":"EICAR
+        test file","def_time":"2015-08-28T00:00:00","scan_time":437.0},"Microsoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":671.0},"NANO":{"scan_result_i":1,"threat_found":"Marker.Dos.EICAR-Test-File.dyb","def_time":"2015-08-28T00:00:00","scan_time":156.0},"nProtect":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":125.0},"Preventon":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-27T00:00:00","scan_time":125.0},"QuickHeal":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":172.0},"Sophos":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":250.0},"STOPzilla":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":2730.0},"SUPERAntiSpyware":{"scan_result_i":1,"threat_found":"NotAThreat.EICAR[TestFile]","def_time":"2015-08-25T00:00:00","scan_time":1576.0},"Symantec":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":453.0},"ThreatTrack":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":234.0},"TrendMicro":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":1342.0},"TrendMicroHouseCall":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":1404.0},"VirIT":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":31.0},"VirusBlokAda":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00","scan_time":16.0},"Xvirus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-15T00:00:00","scan_time":1123.0},"Zillya!":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":94.0},"Zoner":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00","scan_time":16.0}},"rescan_available":false,"data_id":"fc5e448c85e2444692fd102cc502caf4","scan_all_result_i":-1,"start_time":"2015-08-28T17:01:59.2077927Z","total_time":0.0,"total_avs":43,"progress_percentage":95,"in_queue":0,"scan_all_result_a":""},"file_info":{"file_size":231,"upload_timestamp":"2015-08-28T17:01:59.1141923Z","md5":"A624ECCFDFCA8884D4C3D174005F2602","sha1":"C76F98BB191565A3EE4B76DF1F5F7234799AD20A","sha256":"2D3734DABF2D74382228B68DA0F0C2FCED449451347D7EBC3DFAA14A2514CCD0","file_type_category":"T","file_type_description":"ASCII
+        text, with CRLF, LF line terminators","file_type_extension":"-","display_name":"File
+        name unknown"},"data_id":"fc5e448c85e2444692fd102cc502caf4"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Content-Length: ['5013']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:02:02 GMT']
+      ETag: ['"2332519e381a05a1dc710d09783e50714018d414"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.7.0 CPython/3.4.3 Linux/4.1.6-1-ARCH]
+    method: GET
+    uri: https://scan03.metascan-online.com/v2/file/fc5e448c85e2444692fd102cc502caf4
+  response:
+    body: {string: '{"file_id":null,"top_threat":-1,"scan_results":{"scan_details":{"AegisLab":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-28T00:00:00Z","scan_time":1248.0},"Agnitum":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00Z","scan_time":125.0},"Ahnlab":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":125.0},"Antiy":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":749.0},"AVG":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":250.0},"Avira":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":125.0},"Baidu":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":1514.0},"BitDefender":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":156.0},"ByteHero":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":671.0},"ClamAV":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":968.0},"CYREN":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":125.0},"DrWebGateway":{"scan_result_i":1,"threat_found":"EICAR
+        Test File (NOT a Virus!)","def_time":"2015-08-28T00:00:00Z","scan_time":47.0},"Emsisoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":250.0},"ESET":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00Z","scan_time":172.0},"Filseclab":{"scan_result_i":1,"threat_found":"EICAR
+        Test String","def_time":"2015-08-28T00:00:00Z","scan_time":453.0},"Fortinet":{"scan_result_i":1,"threat_found":"EICAR_TEST_FILE","def_time":"2015-08-28T00:00:00Z","scan_time":219.0},"F-prot":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":156.0},"F-secure":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":1124.0},"Hauri":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":172.0},"Ikarus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":32.0},"Jiangmin":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":1514.0},"K7":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":125.0},"Kaspersky":{"scan_result_i":1,"threat_found":"EICAR-Test-File","def_time":"2015-08-28T00:00:00Z","scan_time":172.0},"Lavasoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":2808.0},"McAfee-Gateway":{"scan_result_i":1,"threat_found":"EICAR
+        test file","def_time":"2015-08-28T00:00:00Z","scan_time":437.0},"Microsoft":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00Z","scan_time":671.0},"NANO":{"scan_result_i":1,"threat_found":"Marker.Dos.EICAR-Test-File.dyb","def_time":"2015-08-28T00:00:00Z","scan_time":156.0},"nProtect":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":125.0},"Preventon":{"scan_result_i":1,"threat_found":"EICAR-AV-Test","def_time":"2015-08-27T00:00:00Z","scan_time":125.0},"QuickHeal":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":172.0},"Sophos":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00Z","scan_time":250.0},"STOPzilla":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00Z","scan_time":2730.0},"SUPERAntiSpyware":{"scan_result_i":1,"threat_found":"NotAThreat.EICAR[TestFile]","def_time":"2015-08-25T00:00:00Z","scan_time":1576.0},"Symantec":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00Z","scan_time":453.0},"ThreatTrack":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":234.0},"TotalDefense":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00Z","scan_time":2871.0},"TrendMicro":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":1342.0},"TrendMicroHouseCall":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00Z","scan_time":1404.0},"VirIT":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":31.0},"VirusBlokAda":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-27T00:00:00Z","scan_time":16.0},"Xvirus":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-15T00:00:00Z","scan_time":1123.0},"Zillya!":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":94.0},"Zoner":{"scan_result_i":0,"threat_found":"","def_time":"2015-08-28T00:00:00Z","scan_time":16.0}},"rescan_available":false,"data_id":"fc5e448c85e2444692fd102cc502caf4","scan_all_result_i":1,"start_time":"2015-08-28T17:01:59.441Z","total_time":2871.0,"total_avs":43,"progress_percentage":100,"in_queue":0,"scan_all_result_a":"Infected"},"file_info":{"file_size":231,"upload_timestamp":"2015-08-28T17:01:59.114Z","md5":"A624ECCFDFCA8884D4C3D174005F2602","sha1":"C76F98BB191565A3EE4B76DF1F5F7234799AD20A","sha256":"2D3734DABF2D74382228B68DA0F0C2FCED449451347D7EBC3DFAA14A2514CCD0","file_type_category":"T","file_type_description":"ASCII
+        text, with CRLF, LF line terminators","file_type_extension":"-","display_name":"File
+        name unknown"},"data_id":"fc5e448c85e2444692fd102cc502caf4"}'}
+    headers:
+      Access-Control-Allow-Headers: ['accept,apikey,Content-Type,filename,file_metadata,Cache-Control,Pragma,If-Modified-Since']
+      Access-Control-Allow-Methods: ['POST, GET, OPTIONS']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [private]
+      Content-Length: ['5265']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Fri, 28 Aug 2015 17:02:02 GMT']
+      ETag: ['"6d69ce546b4aed6cb53b88509fa3cda82b9c47d3"']
+      Server: [Metascan]
+    status: {code: 200, message: OK}
+version: 1
