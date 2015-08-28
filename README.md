@@ -7,7 +7,7 @@ metascan-api
 
 To run the tests:
 
-```nosetests```
+`nosetests`
 
 The library uses vcrpy, to refresh the fixtures delete `fixtures/vcr-cassettes` and re-run the tests.
 
